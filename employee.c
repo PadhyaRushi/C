@@ -3,13 +3,16 @@
 int main()
 {
 	int id,hrs;
-    float salary=15000,sh;
+    float salary,sh;
 	
 	printf("The Employee ID(Max.10 chars) :\n");
 	scanf("%d",&id);
 	
 	printf("Working Hours:\n");
 	scanf ("%d",&hrs);
+	
+	printf("Salary/hrs:\n");
+	scanf("%f",&salary);
 	
 	sh=salary*hrs;
 	
