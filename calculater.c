@@ -15,38 +15,37 @@ int main()
     printf("Enter an operator(+,-,*,/):\n");
     scanf("%s",&op);
     
-    printf("Enter Fist number\n:");
+    printf("Enter First number\n:");
     scanf("%d",&a);
-    printf("Enter two number\n:");
+    printf("Enter Second number\n:");
     scanf("%d",&b);
  	
  	  
     if(op=='+')
     {
         ans=a+b;
-        printf("SUM OF TWO NUMBER =%.0f\n",ans);
+        printf("ADDITION OF TWO NUMBER =%.0f\n",ans);
     	
 	}
 	else if(op=='-')
 	{
 		ans=a-b;
-		printf("SUB OF TWO NUMBER =%.0f\n",ans);
+		printf("SUBTRACTION OF TWO NUMBER =%.0f\n",ans);
 		
 	}
 	else if(op=='*')
 	{
 		ans=a*b;
-		 printf("MULTI OF TWO NUMBER =%.0f\n",ans);
+		printf("MULTIPLICATION OF TWO NUMBER =%.0f\n",ans);
 	}
 	else if(op=='/')
 	{
 		ans=a/b;
-		printf("DIV OF TWO NUMBER =%f\n",ans);
+		printf("DIVISION OF TWO NUMBER =%f\n",ans);
 	}
-
 	else
 	{
-		printf("INVALID.....");
+		printf("INVALID INPUT.....!!\n");
 	}
 	
 	 printf("\nWould you like to continue [Y/N] : ");
