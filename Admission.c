@@ -3,6 +3,9 @@
 int main()
 {
 	int math,chem,phy,total,tm;
+	char choice;
+	do{
+	
 	printf("ENTER YOUR THREE SUBJECT MARKS: ");
 	scanf("%d\n%d\n%d",&math,&chem,&phy);
 	printf("Maths Marks =%d\n",math);
@@ -16,12 +19,15 @@ int main()
 	
 	if(math>=65 && phy>=55 && chem>=50 && total>=190 && tm>=140)
 	{
-		printf("CONGRATULATION...!! THE CANDIDATE IS ELIGABLE FOR ADMISSION");
+		printf("CONGRATULATION...!! THE CANDIDATE IS ELIGABLE FOR ADMISSION\n\n");
 	}
 	else
 	{
-		printf("SORRY....!! THE CANDIDATE IS NOT ELIGABLE FOR ADMISSION");
+		printf("SORRY....!! THE CANDIDATE IS NOT ELIGABLE FOR ADMISSION\n\n");
 	}
 	
+	printf("Do you want to continue:");
+	scanf("%s",&choice);
+    }while(choice=='Y' || choice=='y');
 	return 0;
 }
