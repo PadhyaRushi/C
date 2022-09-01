@@ -3,36 +3,41 @@
 int main()
 
 {
-	char choice;
-	printf("Enter Any Alphabate: ");
-	scanf("%c",&choice);
+	char choice,a;
+	do{
+	
+	printf("\nEnter Any Alphabate: ");
+	scanf("%s",&choice);
 	
 	switch(choice)
 	{
-		case 'A' : printf("THIS CHARACTER IS VOWEL");
+		case 'A' : printf("\nTHIS CHARACTER IS VOWEL");
 		break;
-		case 'E' : printf("THIS CHARACTER IS VOWEL");
+		case 'E' : printf("\nTHIS CHARACTER IS VOWEL");
 		break;
-		case 'I' : printf("THIS CHARACTER IS VOWEL");
+		case 'I' : printf("\nTHIS CHARACTER IS VOWEL");
 		break;
-		case 'O' : printf("THIS CHARACTER IS VOWEL");
+		case 'O' : printf("\nTHIS CHARACTER IS VOWEL");
 		break;
-		case 'U' : printf("THIS CHARACTER IS VOWEL");
+		case 'U' : printf("\nTHIS CHARACTER IS VOWEL");
 		break;
-		case 'a' : printf("THIS CHARACTER IS VOWEL");
+		case 'a' : printf("\nTHIS CHARACTER IS VOWEL");
 		break;
-		case 'e' : printf("THIS CHARACTER IS VOWEL");
+		case 'e' : printf("\nTHIS CHARACTER IS VOWEL");
 		break;
-		case 'i' : printf("THIS CHARACTER IS VOWEL");
+		case 'i' : printf("\nTHIS CHARACTER IS VOWEL");
 		break;
-		case 'o' : printf("THIS CHARACTER IS VOWEL");
+		case 'o' : printf("\nTHIS CHARACTER IS VOWEL");
 		break;
-		case 'u' : printf("THIS CHARACTER IS VOWEL");
+		case 'u' : printf("\nTHIS CHARACTER IS VOWEL");
 		break;
 		
-		default :printf("THIS CHARACTER IS CONSTANT");
+		default :printf("\nTHIS CHARACTER IS CONSTANT");
 	}
-	
+		printf("\nDO YOU WANT TO CONTINUE[Y/y]:");
+		fflush(stdin);
+		scanf("%c",&a);
+}while(a=='Y' ||a=='y');
 	
 	return 0;
 	
