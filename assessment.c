@@ -1,59 +1,80 @@
 #include<stdio.h>
 
-int calculater()
+int sum(int a,int b)
 {
-	int first,second;
-	char op,choice;
-	do{
+	return a+b;
 	
-   printf("\n---------------Menu---------------\n");
-   printf("1.Addition\n");
-   printf("2.Subtraction\n");
-   printf("3.Multiplication\n");
-   printf("4.Division\n"); 
-   
-   printf("\nEnter Your choice :");
-   scanf("%s",&op);
-   
-   printf("\nEnter first number :");
-   scanf("%d",&first);
-   printf("Enter second number :");
-   scanf("%d",&second);
-   
-   switch(op)
-   {
-   	 case '1': 
-   	 printf("\nAddition : %d\n",first+second);
-   	 break;
-   	 
-   	 case '2': 
-   	 printf("\nSubtraction : %d\n",first-second);
-   	 break;
-   	  
-   	 case '3': 
-   	 printf("\nMultiplication : %d\n",first*second);
-   	 break;
-   	  
-   	 case '4': 
-   	 printf("\nDivision : %.2f\n",first/second);
-   	 break;
-   	 
-   	
-   	default :
-   		printf("\nInvalid Choice.....");
-   }
-   
-   	 printf("\nWould you like to continue [Y/N] : ");
-     scanf(" %c",&choice);
-     
-}while(choice=='y' || choice=='n' && choice=='N' || choice=='Y');
-    
+}
+int sub(int a,int b)
+{
+	return a-b;
+	
+}
+int multi(int a,int b)
+{
+	return a*b;
+	
+}
+int div(int a,int b)
+{
+	return a/b;
 	
 }
 
 int main()
 {
+	int x,y,choice;
+	char c;
+	printf("------------MENU-------------\n");
+	printf("1. ADDITION\n");
+	printf("2. SUBTRACTION\n");
+	printf("3. MULTIPLICATION\n");
+	printf("4. DIVISION\n");
 	
-    calculater();
-   return 0;	
+	do{
+	
+		
+		
+   printf("\nEnter Your choice :");
+   scanf("%d",&choice);
+   
+   printf("\nEnter First Number :");
+   scanf("%d",&x);
+   printf("Enter Second number :");
+   scanf("%d",&y);
+   
+   
+   switch(choice)
+   {
+   	 case 1: 
+   	 
+   	 printf("\nAddition : %d\n",sum(x,y));
+   	 break;
+   	 
+   	 case 2: 
+   	 printf("\nSubtraction : %d\n",sub(x,y));
+   	 break;
+   	  
+   	 case 3: 
+   	 printf("\nMultiplication : %d\n",multi(x,y));
+   	 break;
+   	  
+   	 case 4: 
+   	 printf("\nDivision : %d\n",div(x,y));
+   	 break;
+   	 
+ 	default :
+  	printf("\nInvalid Choice.....");
+    }
+    
+   printf("\nWould you like to continue  : ");
+   scanf("%s",&c);
+   
+   
+   
+	}while(c=='y' && c!='n' || c=='Y' && c!='N');
+	
+	return 0;
+	
+
 }
